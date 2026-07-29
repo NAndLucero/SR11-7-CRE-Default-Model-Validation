@@ -3,8 +3,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 from sklearn.metrics import roc_auc_score, brier_score_loss, classification_report
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 # Loan Portfolio Simulation
 
@@ -140,13 +139,12 @@ print("--- EXPECTED LOSS (EL) CALCULATION ---")
 
 #  Generate outstanding loan balances (EAD)
 # Assume these are commercial loans ranging from $1M to $25M
-np.random.seed(42)
+
 test_df['EAD'] = np.random.uniform(1_000_000, 25_000_000, len(test_df))
 stress_df['EAD'] = test_df['EAD'] # The balances remain the same in the stress scenario
 
-# 2. Assign Loss Given Default (LGD)
-# Assign a standard 45% for LGD in this case.
-# Assign a stress LGD of 65 %
+#  Standard 45% for LGD in this case.
+#  Stress LGD of 65 %
 test_df['LGD'] = 0.45
 stress_df['LGD'] = 0.65
 
