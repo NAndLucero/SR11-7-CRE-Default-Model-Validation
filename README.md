@@ -8,7 +8,7 @@ An end-to-end development, stress testing, and independent validation of a Comme
 
 
 
-> \*\*🔗 \[Read the full Model Validation Document (PDF)](docs/CRE\-Default\MVD.pdf)\*\*
+> \*\*🔗 \[Read the full Model Validation Document (PDF)](docs/CRE-Default MVD.pdf)\*\*
 
 
 
