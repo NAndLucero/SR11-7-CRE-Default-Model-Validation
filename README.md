@@ -62,27 +62,3 @@ The formal validation audit (detailed in the MVD) uncovered the following struct
 
 
 
-\## 📂 Repository Structure
-
-
-
-```text
-
-SR11-7-CRE-Default-Model-Validation/
-
-├── docs/
-
-│   └── Model\_Validation\_Document.pdf      # Formal SR 11-7 Validation Report
-
-├── src/
-
-│   ├── 01\_data\_generation\_and\_audit.py    # Simulates portfolio and scrubs dirty data
-
-│   ├── 02\_model\_training.py               # Fits Logistic Regression and runs OOS metrics
-
-│   └── 03\_stress\_testing\_and\_EL.py        # Applies macro shocks and calculates dollar loss
-
-├── requirements.txt
-
-└── README.md
-
